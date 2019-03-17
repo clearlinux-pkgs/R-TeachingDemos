@@ -4,13 +4,13 @@
 #
 Name     : R-TeachingDemos
 Version  : 2.10
-Release  : 13
+Release  : 14
 URL      : https://cran.r-project.org/src/contrib/TeachingDemos_2.10.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/TeachingDemos_2.10.tar.gz
 Summary  : Demonstrations for Teaching and Learning
 Group    : Development/Tools
 License  : Artistic-2.0
-BuildRequires : clr-R-helpers
+BuildRequires : buildreq-R
 
 %description
 No detailed description available
@@ -23,11 +23,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1521204593
+export SOURCE_DATE_EPOCH=1552801242
 
 %install
+export SOURCE_DATE_EPOCH=1552801242
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1521204593
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -62,8 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library TeachingDemos|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  TeachingDemos || :
 
 
 %files
