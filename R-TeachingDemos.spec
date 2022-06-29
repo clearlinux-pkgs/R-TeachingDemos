@@ -4,7 +4,7 @@
 #
 Name     : R-TeachingDemos
 Version  : 2.12
-Release  : 41
+Release  : 42
 URL      : https://cran.r-project.org/src/contrib/TeachingDemos_2.12.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/TeachingDemos_2.12.tar.gz
 Summary  : Demonstrations for Teaching and Learning
