@@ -6,10 +6,10 @@
 # autospec commit: da8b975
 #
 Name     : R-TeachingDemos
-Version  : 2.12.1
-Release  : 49
-URL      : https://cran.r-project.org/src/contrib/TeachingDemos_2.12.1.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/TeachingDemos_2.12.1.tar.gz
+Version  : 2.13
+Release  : 50
+URL      : https://cran.r-project.org/src/contrib/TeachingDemos_2.13.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/TeachingDemos_2.13.tar.gz
 Summary  : Demonstrations for Teaching and Learning
 Group    : Development/Tools
 License  : Artistic-2.0
@@ -32,10 +32,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1707670673
+export SOURCE_DATE_EPOCH=1708277970
 
 %install
-export SOURCE_DATE_EPOCH=1707670673
+export SOURCE_DATE_EPOCH=1708277970
 rm -rf %{buildroot}
 LANG=C.UTF-8
 CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -O3 -flto -fno-semantic-interposition "
